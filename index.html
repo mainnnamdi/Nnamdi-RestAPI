@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interactive web application for fetching and displaying data from a REST API, built to meet top academic standards.">
+    
+    <title>Interactive API Data Explorer</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+     <div class="bg-elements">
+        <div class="graffiti-bg graffiti-1">URBAN</div>
+        <div class="graffiti-bg graffiti-2">STREET</div>
+        <div class="graffiti-bg graffiti-3">SLANG</div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">Street Dictionary</h1>
+            <p class="tagline">Decode the Streets</p>
+        </header>
+
+        <div class="search-section">
+            <form class="search-form" id="searchForm">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    id="searchInput" 
+                    placeholder="Enter slang term to look up..."
+                    autocomplete="off"
+                >
+                <button type="submit" class="search-btn" id="searchBtn">
+                    🔍 Search
+                </button>
+            </form>
+            
+            <div class="examples">
+                <span style="color: #b8b8b8; margin-right: 10px;">Try:</span>
+                <div class="example-tag" data-term="lit">lit</div>
+                <div class="example-tag" data-term="salty">salty</div>
+                <div class="example-tag" data-term="flex">flex</div>
+                <div class="example-tag" data-term="vibe">vibe</div>
+                <div class="example-tag" data-term="ghost">ghost</div>
+            </div>
+        </div>
+
+        <div class="results-section" id="resultsSection"></div>
+    </div>
+
+</body>
+</html>
